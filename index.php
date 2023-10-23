@@ -48,6 +48,7 @@ head($page); ?>
     </div> -->
 
 
+    <!-- Start About Section -->
     <section id="about" class="about">
         <div class="container-fluid">
             <div class="introAbout">
@@ -63,19 +64,19 @@ head($page); ?>
                 <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
 
                     <div class="icon-box">
-                        <div class="icon"><i class="fa-solid fa-handshake"></i></i></i></div>
+                        <div id="borderIconFirst" class="icon"><i id="iconFirst" class="fa-solid fa-handshake"></i></i></i></div>
                         <h4 class="title">Soutien Multicanal</h4>
                         <p class="description">Influnias se distingue par son engagement à soutenir les créateurs de contenu sur une variété de plateformes et de réseaux sociaux, offrant ainsi une opportunité à un large éventail de créateurs, qu'ils soient actifs sur YouTube, Instagram, TikTok, ou d'autres médias en ligne. Cela garantit une visibilité maximale pour vos idées et créations.</p>
                     </div>
 
                     <div class="icon-box">
-                        <div class="icon"><i class="fa-solid fa-dove"></i></i></div>
+                        <div id="borderIconSecond" class="icon"><i id="iconSecond" class="fa-solid fa-dove"></i></i></div>
                         <h4 class="title">Liberté Créative et Passion</h4>
                         <p class="description">L'agence Influnias encourage l'expression créative sans limite, vous permettant de partager vos passions profondes et de donner vie à vos projets les plus innovants. Elle valorise la créativité et l'originalité, tout en offrant un espace pour explorer des idées audacieuses et concrétiser des rêves.</p>
                     </div>
 
                     <div class="icon-box">
-                        <div class="icon"><i class="fa-solid fa-lightbulb"></i></i></div>
+                        <div id="borderIconThird" class="icon"><i id="iconThird" class="fa-solid fa-lightbulb"></i></i></div>
                         <h4 class="title">Opportunité Imminente</h4>
                         <p class="description">Ne laissez pas l'opportunité de collaborer avec Influnias vous échapper. Le temps d'agir est maintenant, car la passion ne connaît pas l'attente. Cette agence vous ouvre les portes vers un monde d'opportunités infinies, vous permettant de façonner votre propre destin créatif et de laisser une empreinte durable dans l'univers en constante évolution des médias en ligne.</p>
                     </div>
@@ -84,7 +85,38 @@ head($page); ?>
             </div>
 
         </div>
-    </section><!-- End About Section -->
+    </section>
+    <!-- End About Section -->
+
+    <!-- Start Soutient Section -->
+    <section id="clients" class="section">
+        <!-- Container Ends -->
+        <div class="container">
+            <!-- Row and Scroller Wrapper Starts -->
+            <div class="row owl-carousel owl-theme" id="clients-scroller" style="opacity: 1; display: block;">
+                <div class="owl-wrapper-outer">
+                    <div class="owl-wrapper" style="left: 0px;">
+                        <div class="owl-item" style="width: 222px;">
+                            <div class="client-item-wrapper">
+                                <img src="images/tyrolium.png" alt="">
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 222px;">
+                            <div class="client-item-wrapper">
+                                <img src="images/solunias.png" alt="">
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 222px;">
+                            <div class="client-item-wrapper">
+                                <img src="images/Generatium-ium.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Soutient Section -->
 
 
     <script src="https://kit.fontawesome.com/9997986cc4.js" crossorigin="anonymous"></script>

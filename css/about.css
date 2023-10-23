@@ -13,22 +13,45 @@
     justify-content: center;
     width: 64px;
     height: 64px;
-    border: 2px solid #8dc2f1;
+    border: 2px solid white;
     border-radius: 50px;
     transition: 0.5s;
 }
 
 .about .icon-box .icon i {
-    color: #1977cc;
     font-size: 32px;
 }
 
-.about .icon-box:hover .icon {
-    background: #1977cc;
-    border-color: #1977cc;
+#iconFirst{
+    color: #a66ce1;
 }
 
-.about .icon-box:hover .icon i {
+#iconSecond{
+    color: #929cce;
+}
+
+#iconThird{
+    color: #79d4b8;
+}
+
+.about .icon-box:hover #borderIconFirst {
+    background: #a66ce1;
+    border-color: #a66ce1;
+}
+
+.about .icon-box:hover #borderIconSecond {
+    background: #929cce;
+    border-color: #929cce;
+}
+
+.about .icon-box:hover #borderIconThird {
+    background: #79d4b8;
+    border-color: #79d4b8;
+}
+
+.about .icon-box:hover .icon #iconFirst,
+.about .icon-box:hover .icon #iconSecond,
+.about .icon-box:hover .icon #iconThird {
     color: #fff;
 }
 

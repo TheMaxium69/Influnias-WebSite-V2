@@ -1,0 +1,45 @@
+#clients {
+    background: #ffffff;
+}
+
+.section {
+    padding: 80px 0 65px;
+}
+
+#clients .client-item-wrapper {
+    text-align: center;
+    margin-bottom: 15px;
+    -moz-transition: all .6s ease;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+.owl-carousel {
+    position: relative;
+    width: 100%;
+}
+
+.row {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.owl-carousel .owl-item {
+    float: left;
+}
+
+.owl-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+#clients #clients-scroller img:hover {
+    opacity: 1.0;
+}
+
+#clients .client-item-wrapper img {
+    transition: 0.5s;
+    width: 70%;
+    opacity: 0.5;
+}
