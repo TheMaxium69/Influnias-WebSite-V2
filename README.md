@@ -1,3 +1,3 @@
-# MySiteTemplate
+# Influnias-WebSite-V2
 
-Mon template de site web
+Site web de Influnias, 2ème version
