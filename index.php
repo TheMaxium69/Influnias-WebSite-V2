@@ -7,7 +7,7 @@ head($page); ?>
     <header>
         <?php navbar($page); ?>
 
-        <div class="my-5 py-5">
+        <div id="home" class="my-5 py-5">
             <div class="header">
                 <div class="inner-header flex">
                     <h1>INFLUNIAS</h1>
@@ -49,15 +49,15 @@ head($page); ?>
 
 
     <!-- Start About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about section">
         <div class="container-fluid">
             <div class="introAbout">
-                <h3 class="titleAbout">A propos</h3>
-                <p class="descAbout">Influnias est une agence qui aujourd’hui tend la main à tous les créateurs de contenu, que cela passe par YouTube ou pleins de résaux différents ! Aujourd’hui, nous vous offrons une chance de créer, partager vos passions, vos idées et vos projets ! Alors qu’attendez vous ?! La Passion n’attend pas !</p>
+                <h3>À PROPOS</h3>
+                <p class="descAbout desc">Influnias est une agence qui aujourd’hui tend la main à tous les créateurs de contenu, que cela passe par YouTube ou pleins de résaux différents ! Aujourd’hui, nous vous offrons une chance de créer, partager vos passions, vos idées et vos projets ! Alors qu’attendez vous ?! La Passion n’attend pas !</p>
             </div>
 
             <div class="row">
-                <div class="col-xl-4 col-lg-6 video-box d-flex justify-content-end align-items-center position-relative">
+                <div class="col-xl-4 col-lg-6 video-box d-flex justify-content-center align-items-center position-relative">
                     <img src="images/logoInflunias.png" alt="">
                 </div>
 
@@ -66,19 +66,19 @@ head($page); ?>
                     <div class="icon-box">
                         <div id="borderIconFirst" class="icon"><i id="iconFirst" class="fa-solid fa-handshake"></i></i></i></div>
                         <h4 class="title">Soutien Multicanal</h4>
-                        <p class="description">Influnias se distingue par son engagement à soutenir les créateurs de contenu sur une variété de plateformes et de réseaux sociaux, offrant ainsi une opportunité à un large éventail de créateurs, qu'ils soient actifs sur YouTube, Instagram, TikTok, ou d'autres médias en ligne. Cela garantit une visibilité maximale pour vos idées et créations.</p>
+                        <p class="description desc">Influnias se distingue par son engagement à soutenir les créateurs de contenu sur une variété de plateformes et de réseaux sociaux, offrant ainsi une opportunité à un large éventail de créateurs, qu'ils soient actifs sur YouTube, Instagram, TikTok, ou d'autres médias en ligne. Cela garantit une visibilité maximale pour vos idées et créations.</p>
                     </div>
 
                     <div class="icon-box">
                         <div id="borderIconSecond" class="icon"><i id="iconSecond" class="fa-solid fa-dove"></i></i></div>
                         <h4 class="title">Liberté Créative et Passion</h4>
-                        <p class="description">L'agence Influnias encourage l'expression créative sans limite, vous permettant de partager vos passions profondes et de donner vie à vos projets les plus innovants. Elle valorise la créativité et l'originalité, tout en offrant un espace pour explorer des idées audacieuses et concrétiser des rêves.</p>
+                        <p class="description desc">L'agence Influnias encourage l'expression créative sans limite, vous permettant de partager vos passions profondes et de donner vie à vos projets les plus innovants. Elle valorise la créativité et l'originalité, tout en offrant un espace pour explorer des idées audacieuses et concrétiser des rêves.</p>
                     </div>
 
                     <div class="icon-box">
                         <div id="borderIconThird" class="icon"><i id="iconThird" class="fa-solid fa-lightbulb"></i></i></div>
                         <h4 class="title">Opportunité Imminente</h4>
-                        <p class="description">Ne laissez pas l'opportunité de collaborer avec Influnias vous échapper. Le temps d'agir est maintenant, car la passion ne connaît pas l'attente. Cette agence vous ouvre les portes vers un monde d'opportunités infinies, vous permettant de façonner votre propre destin créatif et de laisser une empreinte durable dans l'univers en constante évolution des médias en ligne.</p>
+                        <p class="description desc">Ne laissez pas l'opportunité de collaborer avec Influnias vous échapper. Le temps d'agir est maintenant, car la passion ne connaît pas l'attente. Cette agence vous ouvre les portes vers un monde d'opportunités infinies, vous permettant de façonner votre propre destin créatif et de laisser une empreinte durable dans l'univers en constante évolution des médias en ligne.</p>
                     </div>
 
                 </div>
@@ -88,78 +88,27 @@ head($page); ?>
     </section>
     <!-- End About Section -->
 
-    <section id="doctors" class="doctors section">
+    <!-- Start Soutient Section -->
+    <section id="clients" class="section" style="background-color: #f9f9f9;">
+        <!-- Container Ends -->
         <div class="container">
-
-            <div class="section-title">
-                <h2>IL NOUS ONT DÉJÀ REJOINS</h2>
-            </div>
-            <br>
-            <div class="row">
-
-                <div class="col-lg-6">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="images/testimonials-1.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Walter White</h4>
-                            <span>Chief Medical Officer</span>
-                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                            <div class="social">
-                                <a href=""><i class="ri-twitter-fill"></i></a>
-                                <a href=""><i class="ri-facebook-fill"></i></a>
-                                <a href=""><i class="ri-instagram-fill"></i></a>
-                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+            <!-- Row and Scroller Wrapper Starts -->
+            <div class="row owl-carousel owl-theme" id="clients-scroller" style="opacity: 1; display: block;">
+                <div class="owl-wrapper-outer">
+                    <div class="owl-wrapper" style="left: 0px;">
+                        <div class="owl-item" style="width: 222px;">
+                            <div class="client-item-wrapper">
+                                <img src="images/tyrolium.png" alt="">
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 mt-4 mt-lg-0">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="images/testimonials-1.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Sarah Jhonson</h4>
-                            <span>Anesthesiologist</span>
-                            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                            <div class="social">
-                                <a href=""><i class="ri-twitter-fill"></i></a>
-                                <a href=""><i class="ri-facebook-fill"></i></a>
-                                <a href=""><i class="ri-instagram-fill"></i></a>
-                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                        <div class="owl-item" style="width: 222px;">
+                            <div class="client-item-wrapper">
+                                <img src="images/solunias.png" alt="">
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 mt-4">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="images/testimonials-1.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>William Anderson</h4>
-                            <span>Cardiology</span>
-                            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                            <div class="social">
-                                <a href=""><i class="ri-twitter-fill"></i></a>
-                                <a href=""><i class="ri-facebook-fill"></i></a>
-                                <a href=""><i class="ri-instagram-fill"></i></a>
-                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 mt-4">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="images/testimonials-1.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Amanda Jepson</h4>
-                            <span>Neurosurgeon</span>
-                            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                            <div class="social">
-                                <a href=""><i class="ri-twitter-fill"></i></a>
-                                <a href=""><i class="ri-facebook-fill"></i></a>
-                                <a href=""><i class="ri-instagram-fill"></i></a>
-                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                        <div class="owl-item" style="width: 222px;">
+                            <div class="client-item-wrapper">
+                                <img src="images/Generatium-ium.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -167,8 +116,99 @@ head($page); ?>
             </div>
         </div>
     </section>
+    <!-- End Soutient Section -->
 
-    <section class="main section">
+    <!-- Services -->
+    <section id="services" class="section">
+        <!-- Container -->
+        <div class="container">
+            <!-- Section title -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-6">
+                    <div class="section-title text-center">
+                        <h3>SERVICES</h3>
+                        <p class="desc">Vous devenez "Influnias Creator" et vous avez accès à cette liste à vie pendant toute la durée de votre abonnement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="row-gap: 20px;">
+                <!-- Service 1 -->
+                <div class="col-12 col-lg-4 res-margin wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0">
+                    <div class="service-single">
+                        <div class="icon"><i class="fa-solid fa-camera" style="color: #ffffff;"></i></div>
+                        <h5>Production Créative</h5>
+                        <p class="desc">Organisation de shootings photo, gros tournages, et services vidéo complets, et recherche de lieux de tournage.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-12 col-lg-4 res-margin wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="service-single">
+                        <div class="icon"><i class="fa-solid fa-gear" style="color: #ffffff;"></i></div>
+                        <h5>Gestion de Projets</h5>
+                        <p class="desc">Accompagnement de projets majeurs, planification d'événements pour créateurs, et facilitation des recrutements dans divers domaines.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-12 col-lg-4 res-margin wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="service-single">
+                        <div class="icon"><i class="fa-solid fa-bullhorn" style="color: #ffffff;"></i></div>
+                        <h5>Aide à la Visibilité</h5>
+                        <p class="desc">Mise en relation avec partenariats, créateurs, et influenceurs, ainsi qu'optimisation de la visibilité et promotion de produits.</p>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-12 col-lg-4 res-margin wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0">
+                    <div class="service-single">
+                        <div class="icon"><i class="fa-solid fa-computer" style="color: #ffffff;"></i></div>
+                        <h5>Services Techniques</h5>
+                        <p class="desc">Informatique personnalisée, création de musique "Libre de Droits," gestion des médias sociaux, et mise en place de la production vidéo.</p>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-12 col-lg-4 res-margin wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="service-single">
+                        <div class="icon"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></div>
+                        <h5>Analyse et Rapports Personnalisés</h5>
+                        <p class="desc">Études mensuelles des statistiques, récapitulatif des données clés, et suivi du succès du projet.</p>
+                    </div>
+                </div>
+                <!-- Service 9 -->
+                <div class="col-12 col-lg-4 res-margin wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="service-single">
+                        <div class="icon"><i class="fa-solid fa-square-rss" style="color: #ffffff;"></i></div>
+                        <h5>Optimisation de Communication</h5>
+                        <p class="desc">Amélioration de la communication traditionnelle et numérique sur différents canaux.</p>
+                    </div>
+                </div>
+                <!-- Service 7 -->
+                <div class="col-12 col-lg-4 res-margin wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0">
+                    <div class="service-single">
+                        <div class="icon"><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i></div>
+                        <h5>Organisation Administrative</h5>
+                        <p class="desc">Gestion des rendez-vous et agent dédié avec FAQ.</p>
+                    </div>
+                </div>
+                <!-- Service 8 -->
+                <div class="col-12 col-lg-4 res-margin wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="service-single">
+                        <div class="icon"><i class="fa-solid fa-tag"></i></div>
+                        <h5>Mise en Avant des Produits</h5>
+                        <p class="desc">Promotion de divers produits de créateurs.</p>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-12 col-lg-4 res-margin wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="service-single">
+                        <div class="icon"><i class="fa-solid fa-brain" style="color: #ffffff;"></i></div>
+                        <h5>Soutien Psychologique</h5>
+                        <p class="desc">Fourniture de soutien émotionnel et psychologique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="founder" class="main section" style="flex-direction: column">
         <div class="testimonials">
             <input type="radio" name="testimonial" id="input-testimonial1" checked>
             <input type="radio" name="testimonial" id="input-testimonial2">
@@ -181,9 +221,9 @@ head($page); ?>
                         <div class="photo-author"></div>
                     </div>
                     <div class="testimonial-text">
-                        <p>Wait a second... you're telling me this testimonials slider is powered solely by CSS? That's some next-level web wizardry! I'm sold! Give me that mind-blowing slider to my website!</p>
+                        <p>J'ai eu envie de créer un projet qui revolutionnera l'influence et l'art sur internet en France, aujourd'hui c'est chose faite.</p>
                     </div>
-                    <div class="testimonial-author">Henry Schwengle</div>
+                    <div class="testimonial-author">Maxime Tournier</div>
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-photo">
@@ -191,9 +231,9 @@ head($page); ?>
                         <div class="photo-author"></div>
                     </div>
                     <div class="testimonial-text">
-                        <p>The older I get, the more I understand why roosters just scream to start the day.</p>
+                        <p>J’ai grandi avec l’idée de créer et partager… Alors pourquoi pas vous ? Une passion est une source infini de motivation alors voilà la nôtre.</p>
                     </div>
-                    <div class="testimonial-author">Mr. George Robert</div>
+                    <div class="testimonial-author">Maëwan Marthelot</div>
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-photo">
@@ -265,42 +305,111 @@ head($page); ?>
         </div>
     </section>
 
-    <!-- Start Soutient Section -->
-    <section id="clients" class="section">
-        <!-- Container Ends -->
+    <section id="subscriber" class="doctors section">
         <div class="container">
-            <!-- Row and Scroller Wrapper Starts -->
-            <div class="row owl-carousel owl-theme" id="clients-scroller" style="opacity: 1; display: block;">
-                <div class="owl-wrapper-outer">
-                    <div class="owl-wrapper" style="left: 0px;">
-                        <div class="owl-item" style="width: 222px;">
-                            <div class="client-item-wrapper">
-                                <img src="images/tyrolium.png" alt="">
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 222px;">
-                            <div class="client-item-wrapper">
-                                <img src="images/solunias.png" alt="">
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 222px;">
-                            <div class="client-item-wrapper">
-                                <img src="images/Generatium-ium.png" alt="">
+
+            <div class="section-title">
+                <h3>IL NOUS ONT DÉJÀ REJOINS</h3>
+            </div>
+            <br>
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="member d-flex align-items-start">
+                        <div class="pic"><img src="images/auroretvv.jpg" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>AuroreTVv</h4>
+                            <span>Streameuse</span>
+                            <p class="desc">Stylé le site non ?</p>
+                            <div class="social">
+                                <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-twitch" style="color: #ffffff;"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="member d-flex align-items-start">
+                        <div class="pic"><img src="images/ma3wan.png" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>MA3WAN</h4>
+                            <span>Youtubeur</span>
+                            <p class="desc">Stylé le site non ?</p>
+                            <div class="social">
+                                <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                        <div class="pic"><img src="images/doublet.png" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>DoubleT</h4>
+                            <span>Youtubeur</span>
+                            <p class="desc">Stylé le site non ?</p>
+                            <div class="social">
+                                <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                        <div class="pic"><img src="images/ananastudio.png" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>AnanaStudio</h4>
+                            <span>Youtubeur</span>
+                            <p class="desc">Stylé le site non ?</p>
+                            <div class="social">
+                                <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                        <div class="pic"><img src="images/rayquaconda.png" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>Rayquaconda</h4>
+                            <span>Youtubeur</span>
+                            <p class="desc">Stylé le site non ?</p>
+                            <div class="social">
+                                <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                                <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
-    <!-- End Soutient Section -->
 
-
-    <section id="newsletter" class="section">
+    <section id="newsletter" class="section" style="padding-bottom: 200px;">
         <div class="container">
             <form id="contactus" action="" method="post">
                 <h3>CONTACTEZ-NOUS</h3>
-                <fieldset> <input placeholder="Nom" type="text" tabindex="1" required autofocus> </fieldset>
+                <fieldset> <input placeholder="Nom" type="text" tabindex="1" required> </fieldset>
                 <fieldset> <input placeholder="Email" type="email" tabindex="2" required> </fieldset>
                 <fieldset> <textarea placeholder="Tapez votre message ici..." tabindex="5" required></textarea> </fieldset>
                 <fieldset> <button name="submit" type="submit" id="contactus-submit" data-submit="...Sending"><i id="icon" class=""></i> Send Now</button> </fieldset>
