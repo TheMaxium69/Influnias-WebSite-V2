@@ -1,4 +1,4 @@
-.about .video-box img{
+.about .video-box img {
     max-height: 400px;
 }
 
@@ -22,15 +22,15 @@
     font-size: 32px;
 }
 
-#iconFirst{
+#iconFirst {
     color: #a66ce1;
 }
 
-#iconSecond{
+#iconSecond {
     color: #929cce;
 }
 
-#iconThird{
+#iconThird {
     color: #79d4b8;
 }
 
@@ -77,14 +77,17 @@
     font-size: 14px;
 }
 
-.titleAbout{
+.titleAbout {
     text-align: center;
 }
 
-.descAbout{
+.descAbout {
     text-align: center;
     max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
 }
 
+.introAbout {
+    margin-bottom: 50px;
+}
