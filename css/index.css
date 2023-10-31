@@ -633,3 +633,16 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 body.dark .logo img {
 	filter: brightness(100%);
 }
+
+
+@media (max-width: 999px) {
+	.navMedia {
+		height: 100vh;
+		text-align: center;
+	}
+
+
+	.navMedia li {
+		height: 10vh;
+	}
+}
