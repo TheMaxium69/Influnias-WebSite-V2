@@ -362,7 +362,8 @@ head($page); ?>
                     </div>
                 </div>
 
-                <div class="col-lg-6 mt-4">
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
                     <div class="member d-flex align-items-start">
                         <div class="pic"><img src="images/doublet.png" class="img-fluid" alt=""></div>
                         <div class="member-info">
@@ -379,7 +380,7 @@ head($page); ?>
                     </div>
                 </div>
 
-                <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="col-lg-6 mt-4">
                     <div class="member d-flex align-items-start">
                         <div class="pic"><img src="images/ma3wan.png" class="img-fluid" alt=""></div>
                         <div class="member-info">
@@ -393,6 +394,8 @@ head($page); ?>
                         </div>
                     </div>
                 </div>
+
+
 
 
 
