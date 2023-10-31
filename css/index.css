@@ -645,4 +645,16 @@ body.dark .logo img {
 	.navMedia li {
 		height: 10vh;
 	}
+
+	#logoAbout {
+		display: none;
+	}
+
+	.navbar-toggler-icon {
+		display: none;
+	}
+
+	.navbar {
+		justify-content: center;
+	}
 }
