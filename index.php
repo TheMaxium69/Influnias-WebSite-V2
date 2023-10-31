@@ -108,31 +108,35 @@ head($page); ?>
                                 <img src="images/tyrolium.png" alt="">
                             </div>
                         </div>
-                        <div class="owl-item" style="width: 222px;">
-                            <div class="client-item-wrapper">
-                                <img src="images/Generatium-ium.png" alt="">
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 222px;">
-                            <div class="client-item-wrapper">
-                                <img src="images/image.png" alt="">
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 222px;">
-                            <div class="client-item-wrapper">
-                                <img src="images/grandest.png" alt="">
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 222px;">
-                            <div class="client-item-wrapper">
-                                <img src="images/auvergne-Rhone-Alphes.png" alt="">
-                            </div>
-                        </div>
+
                         <div class="owl-item" style="width: 222px;">
                             <div class="client-item-wrapper">
                                 <img src="images/frenchtechlyon.png" alt="">
                             </div>
                         </div>
+
+                        <div class="owl-item" style="width: 222px;">
+                            <div class="client-item-wrapper">
+                                <img src="images/auvergne-Rhone-Alphes.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="owl-item" style="width: 222px;">
+                            <div class="client-item-wrapper">
+                                <img src="images/grandest.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="owl-item" style="width: 222px;">
+                            <div class="client-item-wrapper">
+                                <img src="images/Generatium-ium.png" alt="">
+                            </div>
+                        </div>
+
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -340,14 +344,14 @@ head($page); ?>
         <div class="container">
 
             <div class="section-title">
-                <h3>IL NOUS ONT DÉJÀ REJOINS</h3>
+                <h3>ILS NOUS ONT DÉJÀ REJOINTS</h3>
             </div>
             <br>
             <div class="row justify-content-center">
 
                 <div class="col-lg-6">
                     <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="images/auroretvv.jpg" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="images/image.png" class="img-fluid" alt=""></div>
                         <div class="member-info">
                             <h4>AuroreTVv</h4>
                             <span>Streameuse</span>
