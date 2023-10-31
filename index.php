@@ -92,6 +92,13 @@ head($page); ?>
     <section id="clients" class="section" style="background-color: #f9f9f9;">
         <!-- Container Ends -->
         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-6">
+                    <div class="section-title text-center">
+                        <h3>PARTENAIRES</h3>
+                    </div>
+                </div>
+            </div>
             <!-- Row and Scroller Wrapper Starts -->
             <div class="row owl-carousel owl-theme" id="clients-scroller" style="opacity: 1; display: block;">
                 <div class="owl-wrapper-outer">
@@ -209,10 +216,19 @@ head($page); ?>
     </section>
 
     <section id="founder" class="main section" style="flex-direction: column">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-6">
+                    <div class="section-title text-center">
+                        <h3>FONDATEUR</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="testimonials">
             <input type="radio" name="testimonial" id="input-testimonial1" checked>
-            <input type="radio" name="testimonial" id="input-testimonial2">
-            <input type="radio" name="testimonial" id="input-testimonial3">
+            <!-- <input type="radio" name="testimonial" id="input-testimonial2">
+            <input type="radio" name="testimonial" id="input-testimonial3"> -->
             <input type="radio" name="testimonial" id="input-testimonial4">
             <div class="testimonials-inner">
                 <div class="testimonial">
@@ -225,13 +241,13 @@ head($page); ?>
                     </div>
                     <div class="testimonial-author">Maxime Tournier</div>
                 </div>
-                <div class="testimonial">
+                <!-- <div class="testimonial">
                     <div class="testimonial-photo">
                         <div class="photo-background"></div>
                         <div class="photo-author"></div>
                     </div>
                     <div class="testimonial-text">
-                        <p>J’ai grandi avec l’idée de créer et partager… Alors pourquoi pas vous ? Une passion est une source infini de motivation alors voilà la nôtre.</p>
+                        <p>aaaaaaaaaaaaa</p>
                     </div>
                     <div class="testimonial-author">Maëwan Marthelot</div>
                 </div>
@@ -244,30 +260,30 @@ head($page); ?>
                         <p>Two of my friends have never met each other. Before they spoke, I told both of them that the other is a bit deaf. They shouted at each other for a few minutes before they realized that I'm an asshole.</p>
                     </div>
                     <div class="testimonial-author">Doodle Wobblepants</div>
-                </div>
+                </div> -->
                 <div class="testimonial">
                     <div class="testimonial-photo">
                         <div class="photo-background"></div>
                         <div class="photo-author"></div>
                     </div>
                     <div class="testimonial-text">
-                        <p>Turning on your lights and sirens after losing a drag race is just poor sportsmanship, man.</p>
+                        <p>J’ai grandi avec l’idée de créer et partager… Alors pourquoi pas vous ? Une passion est une source infini de motivation alors voilà la nôtre.</p>
                     </div>
-                    <div class="testimonial-author">John "Vroom" Cena</div>
+                    <div class="testimonial-author">Maëwan Marthelot</div>
                 </div>
             </div>
             <div class="testimonials-arrows">
                 <div class="arrow arrow-left">
                     <label for="input-testimonial1"></label>
-                    <label for="input-testimonial2"></label>
-                    <label for="input-testimonial3"></label>
+                    <!-- <label for="input-testimonial2"></label>
+                    <label for="input-testimonial3"></label> -->
                     <label for="input-testimonial4"></label>
                     <span></span>
                 </div>
                 <div class="arrow arrow-right">
                     <label for="input-testimonial1"></label>
-                    <label for="input-testimonial2"></label>
-                    <label for="input-testimonial3"></label>
+                    <!-- <label for="input-testimonial2"></label>
+                    <label for="input-testimonial3"></label> -->
                     <label for="input-testimonial4"></label>
                     <span></span>
                 </div>
@@ -280,7 +296,7 @@ head($page); ?>
                         </div>
                     </div>
                 </label>
-                <label for="input-testimonial2">
+                <!-- <label for="input-testimonial2">
                     <div class="bullet">
                         <div>
                             <span></span>
@@ -293,7 +309,7 @@ head($page); ?>
                             <span></span>
                         </div>
                     </div>
-                </label>
+                </label> -->
                 <label for="input-testimonial4">
                     <div class="bullet">
                         <div>
@@ -312,7 +328,7 @@ head($page); ?>
                 <h3>IL NOUS ONT DÉJÀ REJOINS</h3>
             </div>
             <br>
-            <div class="row">
+            <div class="row justify-content-center">
 
                 <div class="col-lg-6">
                     <div class="member d-flex align-items-start">
@@ -320,13 +336,8 @@ head($page); ?>
                         <div class="member-info">
                             <h4>AuroreTVv</h4>
                             <span>Streameuse</span>
-                            <p class="desc">Stylé le site non ?</p>
                             <div class="social">
-                                <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-twitch" style="color: #ffffff;"></i></a>
+                                <a href="https://www.twitch.tv/auroretvv"><i class="fa-brands fa-twitch" style="color: #ffffff;"></i></a>
                             </div>
                         </div>
                     </div>
@@ -338,12 +349,10 @@ head($page); ?>
                         <div class="member-info">
                             <h4>MA3WAN</h4>
                             <span>Youtubeur</span>
-                            <p class="desc">Stylé le site non ?</p>
                             <div class="social">
-                                <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                                <a href="https://linkedin.com/in/maëwan-marthelot-01744b203"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
+                                <a href="https://instagram.com/maewanm"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                                <a href="https://www.youtube.com/c/MA3WAN/videos"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
                             </div>
                         </div>
                     </div>
@@ -354,13 +363,13 @@ head($page); ?>
                         <div class="pic"><img src="images/doublet.png" class="img-fluid" alt=""></div>
                         <div class="member-info">
                             <h4>DoubleT</h4>
-                            <span>Youtubeur</span>
-                            <p class="desc">Stylé le site non ?</p>
+                            <span>Streameur</span>
                             <div class="social">
-                                <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                                <a href="https://twitter.com/Doublet_creator"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                                <a href="https://www.instagram.com/doublet_creator/"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                                <a href="https://www.youtube.com/channel/UCI7YjBRiSjhbzAi2pyVbxBw"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                                <a href="https://www.twitch.tv/doublet_creator"><i class="fa-brands fa-twitch" style="color: #ffffff;"></i></a>
+                                <a href="https://www.tiktok.com/@doubletcreator"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
                             </div>
                         </div>
                     </div>
@@ -372,12 +381,8 @@ head($page); ?>
                         <div class="member-info">
                             <h4>AnanaStudio</h4>
                             <span>Youtubeur</span>
-                            <p class="desc">Stylé le site non ?</p>
                             <div class="social">
-                                <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                                <a href="https://www.youtube.com/channel/UCVr-bm49yG0Ipcy3jfRxvig"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
                             </div>
                         </div>
                     </div>
@@ -389,12 +394,10 @@ head($page); ?>
                         <div class="member-info">
                             <h4>Rayquaconda</h4>
                             <span>Youtubeur</span>
-                            <p class="desc">Stylé le site non ?</p>
                             <div class="social">
-                                <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                                <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                                <a href="https://twitter.com/rayquacondaytb"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                                <a href="https://instagram.com/rayquacondaytb_off"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                                <a href="https://www.youtube.com/channel/UCeNemYwmIYDBnYSMV8F9cUg"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
                             </div>
                         </div>
                     </div>
@@ -407,12 +410,12 @@ head($page); ?>
 
     <section id="newsletter" class="section" style="padding-bottom: 200px;">
         <div class="container">
-            <form id="contactus" action="" method="post">
+            <form id="contactus" action="https://tyrolium.fr/Contenu/Php/api/influnias/api.php" method="post">
                 <h3>CONTACTEZ-NOUS</h3>
                 <fieldset> <input placeholder="Nom" type="text" tabindex="1" required> </fieldset>
                 <fieldset> <input placeholder="Email" type="email" tabindex="2" required> </fieldset>
                 <fieldset> <textarea placeholder="Tapez votre message ici..." tabindex="5" required></textarea> </fieldset>
-                <fieldset> <button name="submit" type="submit" id="contactus-submit" data-submit="...Sending"><i id="icon" class=""></i> Send Now</button> </fieldset>
+                <fieldset> <button name="submit" type="submit" id="contactus-submit" data-submit="...Sending"><i id="icon" class=""></i>Envoyer</button> </fieldset>
             </form>
         </div>
     </section>
@@ -424,25 +427,25 @@ head($page); ?>
             <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Twitter -->
-                <a class="btn btn-floating m-1 float-shadow" style="background-color: #55acee;" href="#!" role="button"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                <a class="btn btn-floating m-1 float-shadow" style="background-color: #55acee;" href="https://twitter.com/influnias" role="button"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
 
                 <!-- Instagram -->
-                <a class="btn btn-floating m-1 float-shadow" style="background-color: #ac2bac;" href="#!" role="button"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                <a class="btn btn-floating m-1 float-shadow" style="background-color: #ac2bac;" href="https://www.instagram.com/influnias/" role="button"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
 
                 <!-- Linkedin -->
-                <a class="btn btn-floating m-1 float-shadow" style="background-color: #0082ca;" href="#!" role="button"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                <a class="btn btn-floating m-1 float-shadow" style="background-color: #0082ca;" href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHUchZzdRlmXQAAAYuE2AroQZtfUS6x-GOM-qrHiZjDkJA8YyN1_eQmIKeOO0UXcIqAbgQNLilihezkWF4iOXu3ADgY5C--g79wnh6cQTVXSxDM3cqy2AC1_uBBreq-ZbSLihs=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Finflunias" role="button"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
 
                 <!-- Youtube -->
-                <a class="btn btn-floating m-1 float-shadow" style="background-color: #c4302b;" href="#!" role="button"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                <a class="btn btn-floating m-1 float-shadow" style="background-color: #c4302b;" href="https://www.youtube.com/channel/UCm0ASpIy2CJsS9hzVedo_yg" role="button"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
 
                 <!-- Twitch -->
-                <a class="btn btn-floating m-1 float-shadow" style="background-color: #6441a5;" href="#!" role="button"><i class="fa-brands fa-twitch" style="color: #ffffff;"></i></i></a>
+                <a class="btn btn-floating m-1 float-shadow" style="background-color: #6441a5;" href="https://www.twitch.tv/influnias" role="button"><i class="fa-brands fa-twitch" style="color: #ffffff;"></i></i></a>
 
                 <!-- Github -->
-                <a class="btn btn-floating m-1 float-shadow" style="background-color: #333333;" href="#!" role="button"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+                <a class="btn btn-floating m-1 float-shadow" style="background-color: #333333;" href="https://github.com/Influnias" role="button"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
 
                 <!-- Mail -->
-                <a class="btn btn-floating m-1 float-shadow" style="background-color: #FFA500;" href="#!" role="button"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></i></a>
+                <a class="btn btn-floating m-1 float-shadow" style="background-color: #FFA500;" href="mailto:officiel@tyrolium.fr" role="button"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></i></a>
 
 
             </section>
@@ -451,7 +454,7 @@ head($page); ?>
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center p-3 bg-dark">
             Copyright © 2017-2023 All Rights Reserved by
             <a class="text-primary" href="https://tyrolium.fr">Tyrolium</a>
         </div>
