@@ -110,12 +110,27 @@ head($page); ?>
                         </div>
                         <div class="owl-item" style="width: 222px;">
                             <div class="client-item-wrapper">
-                                <img src="images/solunias.png" alt="">
+                                <img src="images/Generatium-ium.png" alt="">
                             </div>
                         </div>
                         <div class="owl-item" style="width: 222px;">
                             <div class="client-item-wrapper">
-                                <img src="images/Generatium-ium.png" alt="">
+                                <img src="images/image.png" alt="">
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 222px;">
+                            <div class="client-item-wrapper">
+                                <img src="images/grandest.png" alt="">
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 222px;">
+                            <div class="client-item-wrapper">
+                                <img src="images/auvergne-Rhone-Alphes.png" alt="">
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 222px;">
+                            <div class="client-item-wrapper">
+                                <img src="images/frenchtechlyon.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -343,21 +358,6 @@ head($page); ?>
                     </div>
                 </div>
 
-                <div class="col-lg-6 mt-4 mt-lg-0">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="images/ma3wan.png" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>MA3WAN</h4>
-                            <span>Youtubeur</span>
-                            <div class="social">
-                                <a href="https://linkedin.com/in/maëwan-marthelot-01744b203"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
-                                <a href="https://instagram.com/maewanm"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                                <a href="https://www.youtube.com/c/MA3WAN/videos"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="col-lg-6 mt-4">
                     <div class="member d-flex align-items-start">
                         <div class="pic"><img src="images/doublet.png" class="img-fluid" alt=""></div>
@@ -374,6 +374,23 @@ head($page); ?>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="member d-flex align-items-start">
+                        <div class="pic"><img src="images/ma3wan.png" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>MA3WAN</h4>
+                            <span>Youtubeur</span>
+                            <div class="social">
+                                <a href="https://linkedin.com/in/maëwan-marthelot-01744b203"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
+                                <a href="https://instagram.com/maewanm"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                                <a href="https://www.youtube.com/c/MA3WAN/videos"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 
                 <div class="col-lg-6 mt-4">
                     <div class="member d-flex align-items-start">
