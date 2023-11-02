@@ -657,4 +657,11 @@ body.dark .logo img {
 	.navbar {
 		justify-content: center;
 	}
+
+	.owl-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
