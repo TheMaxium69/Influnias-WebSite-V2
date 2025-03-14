@@ -34,17 +34,15 @@ head($page); ?>
                     <h3 style="margin-bottom: 12px; margin-top: 20px; color: var(--second-color); opacity: .7">Remerciements</h3>
                     <p class="no-p">Développeur</p>
                     <small>- Maxime Tournier</small><br>
-                    <small>- Pierre-Louis Devaud</small><br>
+                    <small>- Elias Poder</small><br>
                     <p class="no-p">Web-Designeur</p>
                     <small>- Maxime Tournier</small><br>
-                    <small>- Pierre-Louis Devaud</small><br>
                     <p class="no-p">Maquettage</p>
                     <small>- Maxime Tournier</small><br>
-                    <small>- Pierre-Louis Devaud</small><br>
                     <p class="no-p">Graphismes</p>
                     <small>- Maxime Tournier</small><br>
                     <p class="no-p">Remerciment spécial</p>
-                    <small>- Norman Jorge De Freitas</small><br>
+                    <small>- Maewan Marthelot</small><br>
                     <small>- Luigi Guyot</small><br>
                 </div>
                 <div class="col-6 textmore">
