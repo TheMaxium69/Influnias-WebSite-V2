@@ -51,9 +51,9 @@ head($page); ?>
         <?php founder($page); ?>
     </section>
 
-    <section id="subscriber" class="doctors section">
-        <?php subscriber($page); ?>
-    </section>
+<!--    <section id="subscriber" class="doctors section">-->
+<!--        --><?php //subscriber($page); ?>
+<!--    </section>-->
 
     <section id="newsletter" class="section" style="padding-bottom: 200px;">
         <?php newsletter($page); ?>
