@@ -1,0 +1,108 @@
+.section {
+  padding: 80px 0 65px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.section-title h3 {
+  font-size: 2.25em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.section-title p {
+  color: #555;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-single {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
+  padding: 50px;
+  text-align: center;
+  border-radius: 6px;
+  transition: all 0.3s;
+  transform: translateY(0);
+}
+
+.service-single .icon {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+  background-color: #a66ce1;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.service-single h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: #212121;
+  transition: color 0.3s;
+}
+
+.service-single p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  transition: color 0.3s;
+}
+
+.service-single:hover {
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  background-color: #a66ce1;
+}
+
+.service-single:hover p {
+  color: #eee;
+}
+
+.service-single:hover h5 {
+  color: #fff;
+}
+
+.service-single:hover .icon {
+  background-color: #fff;
+}
+
+.service-single:hover .icon i {
+  color: #a66ce1;
+}
+
+@media (max-width: 991px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,45 @@
+<section id="founder" class="founders-section section">
+  <div class="container">
+    <div class="section-title">
+      <h3>FONDATEURS</h3>
+    </div>
+  </div>
+
+  <div class="testimonials">
+    <div class="testimonials-inner">
+      @for (founder of founders; track founder.name; let i = $index) {
+        <div class="testimonial" [class.active]="i === activeIndex">
+          <div class="testimonial-photo">
+            <div class="photo-background"></div>
+            <div class="photo-author" [style.background-image]="'url(' + founder.photo + ')'"></div>
+          </div>
+          <div class="testimonial-text">
+            <p>{{ founder.text }}</p>
+          </div>
+          <div class="testimonial-author">{{ founder.name }}</div>
+        </div>
+      }
+    </div>
+
+    <div class="testimonials-arrows">
+      <button class="arrow arrow-left" (click)="prev()" type="button">
+        <span>&lt;</span>
+      </button>
+      <button class="arrow arrow-right" (click)="next()" type="button">
+        <span>&gt;</span>
+      </button>
+    </div>
+
+    <div class="testimonials-bullets">
+      @for (founder of founders; track founder.name; let i = $index) {
+        <button class="bullet-btn" (click)="goTo(i)" type="button">
+          <div class="bullet">
+            <div>
+              <span [class.active]="i === activeIndex"></span>
+            </div>
+          </div>
+        </button>
+      }
+    </div>
+  </div>
+</section>

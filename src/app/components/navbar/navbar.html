@@ -1,0 +1,25 @@
+<div class="navigation-wrap" [class.scrolled]="scrolled">
+  <div class="container">
+    <nav class="navbar">
+      <a class="navbar-brand" (click)="scrollTo('home')" style="cursor: pointer;">
+        <img src="images/logoInflunias.png" alt="Influnias">
+        INFLUNIAS
+      </a>
+
+      <button class="navbar-toggler" (click)="menuOpen = !menuOpen" [class.open]="menuOpen" type="button">
+        <span class="toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse" [class.open]="menuOpen">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" (click)="scrollTo('home')">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" (click)="scrollTo('about')">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" (click)="scrollTo('clients')">Partenaires</a></li>
+          <li class="nav-item"><a class="nav-link" (click)="scrollTo('services')">Services</a></li>
+          <li class="nav-item"><a class="nav-link" (click)="scrollTo('founder')">Fondateurs</a></li>
+          <li class="nav-item"><a class="nav-link" (click)="scrollTo('newsletter')">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>

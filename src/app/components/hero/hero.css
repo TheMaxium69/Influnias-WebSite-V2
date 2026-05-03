@@ -1,0 +1,112 @@
+:host {
+  display: block;
+  margin-top: 90px;
+}
+
+#home {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(#a66ce1, #79d4b8);
+  color: white;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 7rem;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+}
+
+h1 span {
+  display: inline-block;
+  transition: all 300ms linear;
+  opacity: 1;
+  transform: translate(0);
+}
+
+h4 {
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 10px;
+  opacity: 1;
+  transform: translate(0);
+  transition: all 300ms linear;
+  transition-delay: 1700ms;
+}
+
+:host.hero-animating h4 {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+:host.hero-animating h1 span:nth-child(1) { opacity: 0; transform: translateY(-20px); }
+:host.hero-animating h1 span:nth-child(2) { opacity: 0; transform: translateY(-30px); }
+:host.hero-animating h1 span:nth-child(3) { opacity: 0; transform: translateY(-50px); }
+:host.hero-animating h1 span:nth-child(4) { opacity: 0; transform: translateY(-10px); }
+:host.hero-animating h1 span:nth-child(5) { opacity: 0; transform: translateY(-50px); }
+:host.hero-animating h1 span:nth-child(6) { opacity: 0; transform: translateY(-20px); }
+:host.hero-animating h1 span:nth-child(7) { opacity: 0; transform: translateY(-40px); }
+:host.hero-animating h1 span:nth-child(8) { opacity: 0; transform: translateY(-10px); }
+:host.hero-animating h1 span:nth-child(9) { opacity: 0; transform: translateY(-30px); }
+
+h1 span:nth-child(1) { transition-delay: 1000ms; }
+h1 span:nth-child(2) { transition-delay: 700ms; }
+h1 span:nth-child(3) { transition-delay: 900ms; }
+h1 span:nth-child(4) { transition-delay: 800ms; }
+h1 span:nth-child(5) { transition-delay: 1000ms; }
+h1 span:nth-child(6) { transition-delay: 700ms; }
+h1 span:nth-child(7) { transition-delay: 900ms; }
+h1 span:nth-child(8) { transition-delay: 800ms; }
+h1 span:nth-child(9) { transition-delay: 600ms; }
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1) { animation-delay: -2s; animation-duration: 7s; }
+.parallax > use:nth-child(2) { animation-delay: -3s; animation-duration: 10s; }
+.parallax > use:nth-child(3) { animation-delay: -4s; animation-duration: 13s; }
+.parallax > use:nth-child(4) { animation-delay: -5s; animation-duration: 20s; }
+
+@keyframes move-forever {
+  0% { transform: translate3d(-90px, 0, 0); }
+  100% { transform: translate3d(85px, 0, 0); }
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 4rem; }
+
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+}

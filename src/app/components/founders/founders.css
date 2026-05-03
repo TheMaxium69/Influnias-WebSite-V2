@@ -1,0 +1,256 @@
+.founders-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 80px 0 65px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.section-title h3 {
+  font-size: 2.25em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.testimonials {
+  background-color: #fff;
+  width: 80%;
+  max-width: 740px;
+  margin: 20px;
+  box-shadow: 0 6px 5px -7px #cbcbcb;
+  border-radius: 3px;
+  position: relative;
+  animation: showTestimonials 0.32s 0.78s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
+  opacity: 0;
+}
+
+@keyframes showTestimonials {
+  to { opacity: 1; }
+}
+
+.testimonials-inner {
+  position: relative;
+  min-height: 280px;
+}
+
+.testimonial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 34px 20px 34px;
+  margin: 0 30px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(0, 38px);
+  transition: opacity 0.32s 0.12s, transform 0.72s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.testimonial.active {
+  position: relative;
+  pointer-events: initial;
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.68s 0.52s, transform 0.3s;
+}
+
+.testimonial-photo {
+  height: 84px;
+  width: 84px;
+  position: absolute;
+  top: -32px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.photo-background {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  height: 100%;
+  box-shadow: 0 -4px 3px -2px #c3c2c2;
+  width: 100%;
+  transform: scale(0.87);
+  transition: 0.32s;
+}
+
+.testimonial.active .photo-background {
+  transform: scale(1);
+  transition: 0s;
+}
+
+.photo-author {
+  background-size: 68px;
+  background-position: center;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  transform: scale(1.18) translate(0, -6px);
+  transition: transform 0.42s ease-out, opacity 0.58s, width 0s 0.6s, height 0s 0.6s;
+}
+
+.testimonial.active .photo-author {
+  transform: scale(1);
+  opacity: 1;
+  height: 68px;
+  width: 68px;
+  transition: width 0.26s 1.01s, height 0.26s 1.01s;
+}
+
+.testimonial-text {
+  color: #606060;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0 0 1px #939393;
+  letter-spacing: 0.12px;
+  font-style: italic;
+  line-height: 26px;
+}
+
+.testimonial-text p {
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 15px;
+  text-align: right;
+  color: #bdbdbd;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px #e3e3e3;
+}
+
+.testimonial-author::before {
+  content: '– ';
+}
+
+.testimonials-bullets {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  transform: translate(0, 8px);
+  padding-bottom: 8px;
+}
+
+.bullet-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin: 0 1px;
+}
+
+.bullet {
+  height: 30px;
+  width: 30px;
+}
+
+.bullet div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px -7px #000;
+}
+
+.bullet div span {
+  background-color: #c3c3c3;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  transform: scale(0.82);
+  transition: 0.72s;
+}
+
+.bullet div span.active {
+  background-color: #a66ce1;
+  transform: scale(1);
+  transition: transform 0.36s cubic-bezier(0.26, -0.59, 0.43, 2.48), background-color 0.41s ease-in;
+}
+
+.bullet-btn:hover span {
+  background-color: rgba(216, 118, 118, 0.836);
+}
+
+.testimonials-arrows {
+  height: 100%;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.arrow span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  font-size: 32px;
+  font-family: monospace, sans-serif;
+  font-weight: 600;
+  color: #c3c3c3;
+  transition: color 0.21s ease-in;
+}
+
+.arrow:hover span {
+  color: #444;
+}
+
+.arrow-left {
+  left: -20px;
+}
+
+.arrow-left span {
+  box-shadow: 40px 0 20px 20px #fff, -5px 0 30px 0px #e1e1e1;
+}
+
+.arrow-right {
+  right: -20px;
+}
+
+.arrow-right span {
+  box-shadow: -40px 0 20px 20px #fff, 5px 0 30px 0px #e1e1e1;
+}

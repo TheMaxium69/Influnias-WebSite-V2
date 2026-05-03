@@ -1,0 +1,16 @@
+<section id="clients" class="section partners-section">
+  <div class="container">
+    <div class="section-title">
+      <h3>PARTENAIRES</h3>
+    </div>
+    <div class="partners-row">
+      @for (partner of partners; track partner.name) {
+        <div class="partner-item">
+          <a [href]="partner.url" target="_blank" rel="noopener">
+            <img [src]="partner.logo" [alt]="partner.name">
+          </a>
+        </div>
+      }
+    </div>
+  </div>
+</section>
