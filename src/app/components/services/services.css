@@ -1,12 +1,12 @@
 .section {
-  padding: 80px 0 65px;
+  padding: 90px 0 80px;
 }
 
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 2rem;
   position: relative;
   z-index: 2;
 }
@@ -17,82 +17,76 @@
 }
 
 .section-title h3 {
-  font-size: 2.25em;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.85rem, 3.5vw, 2.75rem);
   font-weight: 700;
+  color: #111827;
   padding-bottom: 5px;
   margin: 0;
 }
 
 .section-title p {
-  color: #555;
+  color: #6b7280;
+  margin-top: 0.75rem;
 }
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 1.5rem;
 }
 
 .service-single {
   position: relative;
   background-color: #fff;
-  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
-  padding: 50px;
+  border: 1px solid #e2e6f3;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  padding: 2.5rem 2rem;
   text-align: center;
-  border-radius: 6px;
-  transition: all 0.3s;
+  border-radius: 18px;
+  transition: all 0.25s ease;
   transform: translateY(0);
 }
 
 .service-single .icon {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  font-size: 40px;
-  line-height: 80px;
-  text-align: center;
-  border-radius: 50%;
-  transition: all 0.3s;
-  background-color: #a66ce1;
-  color: #fff;
-  margin-bottom: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  font-size: 32px;
+  border-radius: 16px;
+  transition: all 0.25s ease;
+  background-color: #e8edff;
+  color: #0533c8;
+  margin-bottom: 1.5rem;
 }
 
 .service-single h5 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0 0 10px;
-  color: #212121;
-  transition: color 0.3s;
+  font-family: 'Syne', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+  color: #111827;
+  transition: color 0.25s;
 }
 
 .service-single p {
-  color: #666;
-  font-size: 14px;
+  color: #6b7280;
+  font-size: 0.875rem;
   line-height: 1.6;
-  transition: color 0.3s;
+  transition: color 0.25s;
 }
 
 .service-single:hover {
-  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
-  background-color: #a66ce1;
-}
-
-.service-single:hover p {
-  color: #eee;
-}
-
-.service-single:hover h5 {
-  color: #fff;
+  box-shadow: 0 16px 48px rgba(0, 26, 110, 0.14);
+  transform: translateY(-4px);
+  border-color: #c5cbe8;
 }
 
 .service-single:hover .icon {
-  background-color: #fff;
-}
-
-.service-single:hover .icon i {
-  color: #a66ce1;
+  background-color: #0533c8;
+  color: #fff;
 }
 
 @media (max-width: 991px) {

@@ -1,6 +1,6 @@
 :host {
   display: block;
-  margin-top: 90px;
+  margin-top: 82px;
 }
 
 #home {
@@ -11,7 +11,7 @@
 .hero-header {
   position: relative;
   text-align: center;
-  background: linear-gradient(#a66ce1, #79d4b8);
+  background: linear-gradient(135deg, #001a6e 0%, #0533c8 60%, #001a6e 100%);
   color: white;
 }
 
@@ -22,18 +22,22 @@
   text-align: center;
   flex-direction: column;
   height: 65vh;
+  min-height: 420px;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 2rem;
+  gap: 1rem;
 }
 
 h1 {
-  font-size: 7rem;
-  line-height: 1.2;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(3rem, 10vw, 7rem);
+  line-height: 1.1;
   font-weight: 700;
   text-align: center;
   margin: 0;
   color: #fff;
+  letter-spacing: -0.02em;
 }
 
 h1 span {
@@ -44,8 +48,12 @@ h1 span {
 }
 
 h4 {
-  color: #fff;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 300;
+  font-size: 1.1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
   margin: 0;
   padding-top: 10px;
   opacity: 1;
@@ -103,7 +111,7 @@ h1 span:nth-child(9) { transition-delay: 600ms; }
 }
 
 @media (max-width: 768px) {
-  h1 { font-size: 4rem; }
+  h1 { font-size: clamp(2.5rem, 10vw, 4rem); }
 
   .waves {
     height: 40px;

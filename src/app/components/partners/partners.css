@@ -1,12 +1,12 @@
 .partners-section {
-  background-color: #f9f9f9;
+  background-color: #f6f7fb;
 }
 
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 2rem;
 }
 
 .section-title {
@@ -15,8 +15,10 @@
 }
 
 .section-title h3 {
-  font-size: 2.25em;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.85rem, 3.5vw, 2.75rem);
   font-weight: 700;
+  color: #111827;
   padding-bottom: 5px;
   margin: 0;
 }
@@ -26,12 +28,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .partner-item {
   text-align: center;
-  transition: all 0.6s ease;
+  transition: all 0.25s ease;
 }
 
 .partner-item a {
@@ -39,14 +41,16 @@
 }
 
 .partner-item img {
-  width: 150px;
-  border-radius: 33px;
+  width: 140px;
+  border-radius: 20px;
   transform: translate3d(0, 0, 0);
-  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease;
   will-change: transform;
   background: white;
+  box-shadow: 0 4px 16px rgba(0, 26, 110, 0.06);
 }
 
 .partner-item img:hover {
-  transform: scale(1.2);
+  transform: scale(1.12) translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 26, 110, 0.12);
 }
