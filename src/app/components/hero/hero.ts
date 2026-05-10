@@ -1,16 +1,13 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.html',
-  styleUrl: './hero.css',
-  host: { '[class.hero-animating]': 'animating' }
+  styleUrl: './hero.css'
 })
-export class HeroComponent implements AfterViewInit {
-  animating = true;
-  letters = 'INFLUNIAS'.split('');
-
-  ngAfterViewInit() {
-    setTimeout(() => { this.animating = false; }, 0);
+export class HeroComponent {
+  scrollTo(id: string) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
   }
 }

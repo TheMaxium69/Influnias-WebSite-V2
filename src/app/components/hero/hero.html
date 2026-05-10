@@ -1,24 +1,84 @@
-<div id="home">
-  <div class="hero-header">
-    <div class="hero-inner">
-      <h1>
-        @for (letter of letters; track $index) {
-          <span>{{ letter }}</span>
-        }
-      </h1>
-      <h4>VOS CRÉATIONS SONT NOTRE CENTRE D'ATTENTION</h4>
-    </div>
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-      <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-      </defs>
-      <g class="parallax">
-        <use href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
-        <use href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-        <use href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-        <use href="#gentle-wave" x="48" y="7" fill="#fff" />
-      </g>
-    </svg>
+<section id="home" class="hero-section">
+
+  <!-- Rings d'animation "signal broadcast" -->
+  <div class="signal-bg">
+    <div class="ring ring-1"></div>
+    <div class="ring ring-2"></div>
+    <div class="ring ring-3"></div>
+    <div class="ring ring-4"></div>
   </div>
-</div>
+
+  <!-- Halo central -->
+  <div class="hero-glow"></div>
+
+  <!-- Contenu principal -->
+  <div class="hero-inner">
+
+    <div class="hero-badge">
+      <span class="badge-pulse"></span>
+      Agence de créateurs de contenu
+    </div>
+
+    <h1>
+      Votre audience,<br>
+      <span class="hero-gradient">amplifiée.</span>
+    </h1>
+
+    <p class="hero-desc">
+      Influnias accompagne les créateurs et connecte les marques aux voix qui résonnent vraiment.
+      Stratégie, partenariats, croissance — on s'occupe de tout.
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn-primary" (click)="scrollTo('newsletter')">
+        <i class="ri-user-add-line"></i>
+        Rejoindre le réseau
+      </button>
+      <button class="btn-ghost" (click)="scrollTo('about')">
+        Découvrir l'agence
+        <i class="ri-arrow-right-line"></i>
+      </button>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <strong>50+</strong>
+        <span>Créateurs</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <strong>30+</strong>
+        <span>Marques partenaires</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <strong>100M+</strong>
+        <span>Vues générées</span>
+      </div>
+    </div>
+
+    <div class="hero-platforms">
+      <span class="platform-icon"><i class="ri-youtube-fill"></i></span>
+      <span class="platform-icon"><i class="ri-instagram-line"></i></span>
+      <span class="platform-icon"><i class="ri-tiktok-fill"></i></span>
+      <span class="platform-icon"><i class="ri-twitch-fill"></i></span>
+      <span class="platform-icon"><i class="ri-twitter-x-fill"></i></span>
+    </div>
+
+  </div>
+
+  <!-- Transition vague vers le reste de la page -->
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+      <use href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+  </svg>
+
+</section>
