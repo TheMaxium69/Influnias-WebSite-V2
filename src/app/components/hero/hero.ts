@@ -5,9 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './hero.html',
   styleUrl: './hero.css'
 })
-export class HeroComponent {
-  scrollTo(id: string) {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  }
-}
+export class HeroComponent {}

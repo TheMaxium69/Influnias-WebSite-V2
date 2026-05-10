@@ -1,139 +1,227 @@
-.about.section {
-  padding: 90px 0 80px;
-  background-color: #f6f7fb;
+:host {
+  display: block;
 }
 
-.container-fluid {
+/* ─── Section ────────────────────────────────────────────── */
+
+.about-section {
+  background: var(--page-bg, #ffffff);
+  padding: 90px 0 80px;
+}
+
+.container {
   width: 100%;
-  padding: 0 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.introAbout {
+/* ─── Header ─────────────────────────────────────────────── */
+
+.about-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.introAbout h3 {
+.about-label {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: #0533c8;
+  background: rgba(5, 51, 200, 0.06);
+  border: 1px solid rgba(5, 51, 200, 0.15);
+  padding: 0.3rem 0.875rem;
+  border-radius: 100px;
+}
+
+h2 {
   font-family: 'Syne', sans-serif;
   font-size: clamp(1.85rem, 3.5vw, 2.75rem);
   font-weight: 700;
-  color: #111827;
-  margin: 0 0 0.75rem;
+  color: var(--page-text, #111827);
+  margin: 0;
+  line-height: 1.15;
 }
 
-.descAbout {
-  text-align: center;
-  max-width: 760px;
-  margin-right: auto;
-  margin-left: auto;
-  color: #6b7280;
+.about-header p {
+  max-width: 600px;
+  color: var(--page-text-2, #4b5563);
+  line-height: 1.75;
   font-size: 1rem;
-  line-height: 1.7;
+  margin: 0;
+  padding: 0;
 }
 
-.about-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+/* ─── Body layout ────────────────────────────────────────── */
+
+.about-body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
   align-items: center;
 }
 
-.about-logo-col {
-  flex: 0 0 33.333%;
-  max-width: 33.333%;
+/* ─── Visual ─────────────────────────────────────────────── */
+
+.about-visual {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 320px;
 }
 
-.about-logo-col img {
-  max-height: 380px;
-  width: auto;
+.about-visual-blob {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(5, 51, 200, 0.09), rgba(191, 0, 0, 0.06));
+  filter: blur(2px);
 }
 
-.about-boxes-col {
-  flex: 0 0 58.333%;
-  max-width: 58.333%;
+.about-logo {
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  height: auto;
+  filter: drop-shadow(0 8px 32px rgba(5, 51, 200, 0.18));
+  transition: transform 0.3s ease;
+}
+
+.about-visual:hover .about-logo {
+  transform: scale(1.04);
+}
+
+/* ─── Cards ──────────────────────────────────────────────── */
+
+.about-cards {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  gap: 1rem;
 }
 
-.icon-box {
-  margin-top: 2rem;
+.about-card {
   display: flex;
-  align-items: flex-start;
-  gap: 1.25rem;
+  gap: 1.125rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--page-card-bg, #ffffff);
+  border: 1px solid var(--page-border, #e5e7eb);
+  border-radius: 14px;
+  position: relative;
   overflow: hidden;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
 }
 
-.icon-box:first-child {
-  margin-top: 0;
+.about-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #0533c8, #bf0000);
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
-.icon {
+.about-card:hover {
+  box-shadow: 0 4px 24px rgba(5, 51, 200, 0.09);
+  border-color: rgba(5, 51, 200, 0.2);
+  transform: translateX(3px);
+}
+
+.about-card:hover::before {
+  opacity: 1;
+}
+
+.about-card-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0533c8, #bf0000);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
-  min-width: 56px;
-  border: 2px solid #e2e6f3;
-  border-radius: 14px;
-  background-color: #fff;
-  transition: 0.25s ease;
-  flex-shrink: 0;
-  float: none;
-}
-
-.icon i {
-  font-size: 24px;
-}
-
-.icon-first { color: #0533c8; }
-.icon-second { color: #001a6e; }
-.icon-third { color: #0533c8; }
-
-.icon-box:hover .border-first,
-.icon-box:hover .border-second,
-.icon-box:hover .border-third {
-  background: #0533c8;
-  border-color: #0533c8;
-}
-
-.icon-box:hover .icon-first,
-.icon-box:hover .icon-second,
-.icon-box:hover .icon-third {
   color: #fff;
+  font-size: 19px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(5, 51, 200, 0.2);
 }
 
-.title {
+.about-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.about-card-body h4 {
   font-family: 'Syne', sans-serif;
   font-weight: 700;
-  margin-bottom: 0.4rem;
-  font-size: 1rem;
-  margin-top: 0;
-  margin-left: 0;
-  color: #111827;
+  font-size: 0.95rem;
+  color: var(--page-text, #111827);
+  margin: 0;
 }
 
-.description {
-  margin-left: 0;
-  line-height: 1.6;
+.about-card-body p {
   font-size: 0.875rem;
-  color: #6b7280;
+  color: var(--page-text-2, #4b5563);
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width: 999px) {
-  .about-logo-col {
-    display: none;
+/* ─── Dark mode ──────────────────────────────────────────── */
+
+:host-context([data-theme="dark"]) .about-section {
+  background: var(--page-bg-light, #ffffff);
+}
+
+:host-context([data-theme="dark"]) .about-label {
+  background: rgba(5, 51, 200, 0.15);
+  border-color: rgba(5, 51, 200, 0.3);
+  color: #7ba7ff;
+}
+
+:host-context([data-theme="dark"]) .about-visual-blob {
+  background: linear-gradient(135deg, rgba(5, 51, 200, 0.18), rgba(191, 0, 0, 0.12));
+}
+
+:host-context([data-theme="dark"]) .about-card:hover {
+  box-shadow: 0 4px 24px rgba(5, 51, 200, 0.15);
+}
+
+/* ─── Responsive ─────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .about-body {
+    grid-template-columns: 1fr;
   }
 
-  .about-boxes-col {
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding: 0;
+  .about-visual {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-card {
+    padding: 1rem;
+    gap: 0.875rem;
+  }
+
+  .about-card-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    font-size: 17px;
   }
 }

@@ -1,17 +1,23 @@
-<section id="services" class="section">
+<section id="services" class="services-section">
   <div class="container">
-    <div class="section-title">
-      <h3>SERVICES</h3>
-      <p class="desc">Vous devenez "Influnias Creator" et vous avez accès à cette liste à vie pendant toute la durée de votre abonnement.</p>
+
+    <div class="services-header">
+      <span class="services-label">Ce qu'on fait</span>
+      <h2>SERVICES</h2>
+      <p>En rejoignant Influnias, vous devenez <strong>Influnias Creator</strong> et accédez à l'ensemble de ces services pour toute la durée de votre collaboration.</p>
     </div>
+
     <div class="services-grid">
       @for (service of services; track service.title) {
-        <div class="service-single">
-          <div class="icon"><i class="fa-solid {{ service.icon }}"></i></div>
-          <h5>{{ service.title }}</h5>
-          <p class="desc">{{ service.desc }}</p>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid {{ service.icon }}"></i>
+          </div>
+          <h4>{{ service.title }}</h4>
+          <p>{{ service.desc }}</p>
         </div>
       }
     </div>
+
   </div>
 </section>

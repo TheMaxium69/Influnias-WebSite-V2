@@ -1,16 +1,21 @@
-<section id="clients" class="section partners-section">
+<section id="clients" class="partners-section">
   <div class="container">
-    <div class="section-title">
-      <h3>PARTENAIRES</h3>
+
+    <div class="partners-header">
+      <span class="partners-label">Ils nous font confiance</span>
+      <h2>PARTENAIRES</h2>
     </div>
-    <div class="partners-row">
+
+    <div class="partners-grid">
       @for (partner of partners; track partner.name) {
-        <div class="partner-item">
-          <a [href]="partner.url" target="_blank" rel="noopener">
+        <a class="partner-card" [href]="partner.url" target="_blank" rel="noopener">
+          <div class="partner-logo-wrap">
             <img [src]="partner.logo" [alt]="partner.name">
-          </a>
-        </div>
+          </div>
+          <span class="partner-name">{{ partner.name }}</span>
+        </a>
       }
     </div>
+
   </div>
 </section>

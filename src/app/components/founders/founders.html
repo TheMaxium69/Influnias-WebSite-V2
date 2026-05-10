@@ -1,45 +1,30 @@
-<section id="founder" class="founders-section section">
+<section id="founder" class="founders-section">
   <div class="container">
-    <div class="section-title">
-      <h3>FONDATEURS</h3>
-    </div>
-  </div>
 
-  <div class="testimonials">
-    <div class="testimonials-inner">
-      @for (founder of founders; track founder.name; let i = $index) {
-        <div class="testimonial" [class.active]="i === activeIndex">
-          <div class="testimonial-photo">
-            <div class="photo-background"></div>
-            <div class="photo-author" [style.background-image]="'url(' + founder.photo + ')'"></div>
+    <div class="founders-header">
+      <span class="founders-label">L'équipe fondatrice</span>
+      <h2>FONDATEURS</h2>
+      <p>Influnias est né de la vision de deux passionnés du digital, convaincus que chaque créateur mérite un vrai accompagnement.</p>
+    </div>
+
+    <div class="founders-grid">
+      @for (founder of founders; track founder.name) {
+        <div class="founder-card">
+          <div class="founder-photo-wrap">
+            <div class="founder-photo" [style.background-image]="'url(' + founder.photo + ')'"></div>
           </div>
-          <div class="testimonial-text">
-            <p>{{ founder.text }}</p>
+          <div class="founder-quote-wrap">
+            <i class="ri-double-quotes-l quote-icon"></i>
+            <p class="founder-quote">{{ founder.text }}</p>
           </div>
-          <div class="testimonial-author">{{ founder.name }}</div>
+          <div class="founder-sep"></div>
+          <div class="founder-meta">
+            <strong class="founder-name">{{ founder.name }}</strong>
+            <span class="founder-role">{{ founder.role }}</span>
+          </div>
         </div>
       }
     </div>
 
-    <div class="testimonials-arrows">
-      <button class="arrow arrow-left" (click)="prev()" type="button">
-        <span>&lt;</span>
-      </button>
-      <button class="arrow arrow-right" (click)="next()" type="button">
-        <span>&gt;</span>
-      </button>
-    </div>
-
-    <div class="testimonials-bullets">
-      @for (founder of founders; track founder.name; let i = $index) {
-        <button class="bullet-btn" (click)="goTo(i)" type="button">
-          <div class="bullet">
-            <div>
-              <span [class.active]="i === activeIndex"></span>
-            </div>
-          </div>
-        </button>
-      }
-    </div>
   </div>
 </section>

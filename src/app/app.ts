@@ -41,14 +41,14 @@ export class App {
       ? [
           { label: 'Home',      link: '/',     icon: 'ri-home-line' },
           { label: 'Services',  link: '/#services', icon: 'ri-briefcase-line' },
-          { label: 'Partners',  link: '/#clients',  icon: 'ri-handshake-line' },
+          { label: 'Partners',  link: '/#clients',  icon: 'ri-hand-heart-line' },
           { label: 'Founders',  link: '/#founder',  icon: 'ri-team-line' },
           { label: 'Contact',   link: '/#newsletter', icon: 'ri-mail-line' },
         ]
       : [
           { label: 'Accueil',     link: '/',              icon: 'ri-home-line' },
           { label: 'Services',    link: '/#services',     icon: 'ri-briefcase-line' },
-          { label: 'Partenaires', link: '/#clients',      icon: 'ri-handshake-line' },
+          { label: 'Partenaires', link: '/#clients',      icon: 'ri-hand-heart-line' },
           { label: 'Fondateurs',  link: '/#founder',      icon: 'ri-team-line' },
           { label: 'Contact',     link: '/#newsletter',   icon: 'ri-mail-line' },
         ]

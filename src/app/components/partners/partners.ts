@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
 })
 export class PartnersComponent {
   partners = [
-    { name: 'Tyrolium', logo: 'images/tyrolium.png', url: 'https://tyrolium.fr/' },
-    { name: 'La French Tech', logo: 'images/frenchtechlyon.png', url: 'https://www.lafrenchtech-onelse.com/' },
-    { name: 'Auvergne-Rhône-Alpes', logo: 'images/auvergne-Rhone-Alphes.png', url: 'https://www.auvergnerhonealpes.fr/' },
-    { name: 'Grand Est', logo: 'images/grandest.png', url: 'https://www.grandest.fr/' },
-    { name: 'Génération IUM', logo: 'images/Generatium-ium.png', url: 'https://www.linkedin.com/company/génération-ium/' },
+    { name: 'La French Tech', logo: 'assets/frenchtechlyon.png', url: 'https://www.lafrenchtech-onelse.com/' },
+    { name: 'Auvergne-Rhône-Alpes', logo: 'assets/auvergne-Rhone-Alphes.png', url: 'https://www.auvergnerhonealpes.fr/' },
+    { name: 'Grand Est', logo: 'assets/grandest.png', url: 'https://www.grandest.fr/' },
+    { name: 'Génération IUM', logo: 'assets/Generatium-ium.png', url: 'https://www.linkedin.com/company/génération-ium/' },
   ];
 }

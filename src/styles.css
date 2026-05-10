@@ -1,3 +1,11 @@
+/* ─── Reset box-sizing (corrige le débordement horizontal) ── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ─── Utilitaires globaux ────────────────────────────────── */
+
 .section {
   position: relative;
   width: 100%;
@@ -30,9 +38,4 @@
   color: #6b7280;
   font-size: 1rem;
   margin-top: 0.75rem;
-}
-
-p {
-  margin: 0;
-  padding-top: 10px;
 }
