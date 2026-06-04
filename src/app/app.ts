@@ -24,7 +24,7 @@ export class App {
    */
 
   public PROJECT_NAME = 'Influnias';
-  public PROJECT_LOGO = 'assets/Influnias.png';
+  public PROJECT_LOGO = 'assets/tyrolium-ui/projects/Influnias.png';
 
   public PROJECT_CONTENT = computed(() =>
     this.langService.lang() === 'en'
@@ -40,26 +40,27 @@ export class App {
     this.langService.lang() === 'en'
       ? [
           { label: 'Home',      link: '/',     icon: 'ri-home-line' },
-          { label: 'Services',  link: '/#services', icon: 'ri-briefcase-line' },
-          { label: 'Partners',  link: '/#clients',  icon: 'ri-hand-heart-line' },
-          { label: 'Founders',  link: '/#founder',  icon: 'ri-team-line' },
-          { label: 'Contact',   link: '/#newsletter', icon: 'ri-mail-line' },
+          { label: 'Partners',  ancre: 'clients',  icon: 'ri-hand-heart-line' },
+          { label: 'Services',  ancre: 'services', icon: 'ri-briefcase-line' },
+          { label: 'Founders',  ancre: 'founder',  icon: 'ri-team-line' },
+          { label: 'Contact',   href: 'https://tyrolium.fr/contact?from=influnias', icon: 'ri-mail-line' },
         ]
       : [
           { label: 'Accueil',     link: '/',              icon: 'ri-home-line' },
-          { label: 'Services',    link: '/#services',     icon: 'ri-briefcase-line' },
-          { label: 'Partenaires', link: '/#clients',      icon: 'ri-hand-heart-line' },
-          { label: 'Fondateurs',  link: '/#founder',      icon: 'ri-team-line' },
-          { label: 'Contact',     link: '/#newsletter',   icon: 'ri-mail-line' },
+          { label: 'Partenaires', ancre: 'clients',      icon: 'ri-hand-heart-line' },
+          { label: 'Services',    ancre: 'services',     icon: 'ri-briefcase-line' },
+          { label: 'Fondateurs',  ancre: 'founder',      icon: 'ri-team-line' },
+          { label: 'Contact',     href: 'https://tyrolium.fr/contact?from=influnias',   icon: 'ri-mail-line' },
         ]
   );
 
   public socials: ITyroUiNavbarPages[] = [
-    { label: 'instagram', link: 'https://www.instagram.com/influnias/', icon: 'ri-instagram-line' },
-    { label: 'youtube',   link: 'https://www.youtube.com/@influnias',   icon: 'ri-youtube-fill' },
-    { label: 'tiktok',    link: 'https://www.tiktok.com/@influnias',    icon: 'ri-tiktok-fill' },
-    { label: 'twitter',   link: 'https://x.com/influnias',              icon: 'ri-twitter-x-fill' },
-    { label: 'discord',   link: 'https://discord.com/invite/influnias', icon: 'ri-discord-fill' },
+      { label: 'instagram', link: 'https://www.instagram.com/influnias/', icon: 'ri-instagram-line' },
+      { label: 'x',         link: 'https://x.com/influnias',                         icon: 'ri-twitter-x-fill' },
+      { label: 'youtube',   link: 'https://www.youtube.com/channel/UCm0ASpIy2CJsS9hzVedo_yg',               icon: 'ri-youtube-fill' },
+      { label: 'tiktok',    link: 'https://www.tiktok.com/@influnias',                icon: 'ri-tiktok-fill' },
+      { label: 'twitch',    link: 'https://www.twitch.tv/influnias',                  icon: 'ri-twitch-fill' },
+      { label: 'github',    link: 'https://github.com/Influnias',                     icon: 'ri-github-fill' },
   ];
 
 }
