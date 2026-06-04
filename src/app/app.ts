@@ -5,10 +5,11 @@ import { PartnersComponent } from './components/partners/partners';
 import { ServicesComponent } from './components/services/services';
 import { FoundersComponent } from './components/founders/founders';
 import { ITyroUiNavbarPages, TyroUiCTA, TyroUiFooter, TyroUiLangService, TyroUiNavbar } from 'tyrolium-ui';
+import {RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-root',
-  imports: [HeroComponent, AboutComponent, PartnersComponent, ServicesComponent, FoundersComponent, TyroUiNavbar, TyroUiFooter, TyroUiCTA],
+    imports: [HeroComponent, AboutComponent, PartnersComponent, ServicesComponent, FoundersComponent, TyroUiNavbar, TyroUiFooter, TyroUiCTA, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
