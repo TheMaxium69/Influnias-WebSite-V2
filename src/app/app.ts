@@ -1,15 +1,10 @@
 import { Component, computed, inject } from '@angular/core';
-import { HeroComponent } from './components/hero/hero';
-import { AboutComponent } from './components/about/about';
-import { PartnersComponent } from './components/partners/partners';
-import { ServicesComponent } from './components/services/services';
-import { FoundersComponent } from './components/founders/founders';
-import { ITyroUiNavbarPages, TyroUiCTA, TyroUiFooter, TyroUiLangService, TyroUiNavbar } from 'tyrolium-ui';
+import { ITyroUiNavbarPages, TyroUiFooter, TyroUiLangService, TyroUiNavbar } from 'tyrolium-ui';
 import {RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-root',
-    imports: [HeroComponent, AboutComponent, PartnersComponent, ServicesComponent, FoundersComponent, TyroUiNavbar, TyroUiFooter, TyroUiCTA, RouterOutlet],
+    imports: [TyroUiNavbar, TyroUiFooter, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
