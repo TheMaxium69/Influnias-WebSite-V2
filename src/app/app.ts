@@ -25,7 +25,7 @@ export class App {
   public PROJECT_CONTENT = computed(() =>
     this.langService.lang() === 'en'
       ? `<strong>Influnias</strong> is a <strong>content creator agency</strong> built to give digital talents the tools they deserve. From <strong>editorial strategy</strong> to <strong>brand partnerships</strong>, we support every creator with expertise and passion. <em>Passion doesn't wait.</em>`
-      : `<strong>Influnias</strong> est une <strong>agence de créateurs de contenu</strong> qui donne aux talents du numérique les moyens de grandir. De la <strong>stratégie éditoriale</strong> aux <strong>partenariats de marque</strong>, nous accompagnons chaque créateur avec expertise et passion. <em>La passion n'attend pas.</em>`
+      : `<strong>Influnias</strong> est une <strong>agence de créateurs de contenu</strong> qui donne aux talents du numérique les moyens de grandir. De la <strong>stratégie éditoriale</strong> aux <strong>partenariats de marque</strong>, nous accompagnons chaque créateur avec expertise et passion. <em>Une filiale de Tyrolium.</em>`
   );
 
   /*
