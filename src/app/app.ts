@@ -36,14 +36,14 @@ export class App {
     this.langService.lang() === 'en'
       ? [
           { label: 'Home',      link: '/',     icon: 'ri-home-line' },
-          { label: 'Partners',  ancre: 'clients',  icon: 'ri-hand-heart-line' },
+          { label: 'How it works', ancre: 'process', icon: 'ri-route-line' },
           { label: 'Services',  ancre: 'services', icon: 'ri-briefcase-line' },
           { label: 'Founders',  ancre: 'founder',  icon: 'ri-team-line' },
           { label: 'Contact',   href: 'https://tyrolium.fr/contact?from=influnias', icon: 'ri-mail-line' },
         ]
       : [
           { label: 'Accueil',     link: '/',              icon: 'ri-home-line' },
-          { label: 'Partenaires', ancre: 'clients',      icon: 'ri-hand-heart-line' },
+          { label: 'Comment ça marche', ancre: 'process', icon: 'ri-route-line' },
           { label: 'Services',    ancre: 'services',     icon: 'ri-briefcase-line' },
           { label: 'Fondateurs',  ancre: 'founder',      icon: 'ri-team-line' },
           { label: 'Contact',     href: 'https://tyrolium.fr/contact?from=influnias',   icon: 'ri-mail-line' },
