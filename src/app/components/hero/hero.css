@@ -237,7 +237,7 @@ h1 {
   100% { transform: translate3d(85px, 0, 0);  }
 }
 
-/* ─── DARK MODE — seules les vagues changent ─────────────── */
+/* ─── DARK MODE - seules les vagues changent ─────────────── */
 
 :host-context([data-theme="dark"]) .parallax > use:nth-child(1) { fill: rgba(22, 27, 39, 0.4); }
 :host-context([data-theme="dark"]) .parallax > use:nth-child(2) { fill: rgba(22, 27, 39, 0.6); }

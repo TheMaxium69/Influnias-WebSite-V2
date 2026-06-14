@@ -19,7 +19,7 @@ export class FoundersComponent {
     {
       name: 'Maëwan Marthelot',
       role: 'Co-founder',
-      text: "I grew up with the idea of creating and sharing… So, why not you? Passion is an endless source of motivation — here's ours.",
+      text: "I grew up with the idea of creating and sharing… So, why not you? Passion is an endless source of motivation - here's ours.",
       photo: 'assets/Maewan_Marthelot.jpg'
     }
   ] : [
