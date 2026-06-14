@@ -16,33 +16,41 @@
 
     <div class="hero-badge">
       <span class="badge-pulse"></span>
-      Agence de créateurs de contenu
+      {{ lang() === 'en' ? 'Content Creator Agency' : 'Agence de créateurs de contenu' }}
     </div>
 
     <h1>
-      Votre audience,<br>
-      <span class="hero-gradient">amplifiée.</span>
+      @if (lang() === 'en') {
+        Your audience,<br>
+        <span class="hero-gradient">amplified.</span>
+      } @else {
+        Votre audience,<br>
+        <span class="hero-gradient">amplifiée.</span>
+      }
     </h1>
 
     <p class="hero-desc">
-      Influnias accompagne les créateurs et connecte les marques aux voix qui résonnent vraiment.
-      Stratégie, partenariats, croissance - on s'occupe de tout.
+      @if (lang() === 'en') {
+        Influnias supports creators and connects brands to the voices that truly resonate. Strategy, partnerships, growth — we handle it all.
+      } @else {
+        Influnias accompagne les créateurs et connecte les marques aux voix qui résonnent vraiment. Stratégie, partenariats, croissance - on s'occupe de tout.
+      }
     </p>
 
     <div class="hero-stats">
       <div class="stat">
         <strong>30+</strong>
-        <span>Créateurs</span>
+        <span>{{ lang() === 'en' ? 'Creators' : 'Créateurs' }}</span>
       </div>
       <div class="stat-sep"></div>
       <div class="stat">
         <strong>60+</strong>
-        <span>Marques partenaires</span>
+        <span>{{ lang() === 'en' ? 'Partner Brands' : 'Marques partenaires' }}</span>
       </div>
       <div class="stat-sep"></div>
       <div class="stat">
         <strong>10M+</strong>
-        <span>Vues générées</span>
+        <span>{{ lang() === 'en' ? 'Generated Views' : 'Vues générées' }}</span>
       </div>
     </div>
 

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
+import { TyroUiLangService } from 'tyrolium-ui';
 
 @Component({
   selector: 'app-founders',
@@ -6,7 +7,22 @@ import { Component } from '@angular/core';
   styleUrl: './founders.css'
 })
 export class FoundersComponent {
-  founders = [
+  readonly lang = inject(TyroUiLangService).lang;
+
+  readonly founders = computed(() => this.lang() === 'en' ? [
+    {
+      name: 'Maxime Tournier',
+      role: 'Co-founder & CEO',
+      text: "I wanted to create a project that would revolutionize influence and art on the internet in France. Today, it's done.",
+      photo: 'assets/Maxime_Tournier.jpg'
+    },
+    {
+      name: 'Maëwan Marthelot',
+      role: 'Co-founder',
+      text: "I grew up with the idea of creating and sharing… So, why not you? Passion is an endless source of motivation — here's ours.",
+      photo: 'assets/Maewan_Marthelot.jpg'
+    }
+  ] : [
     {
       name: 'Maxime Tournier',
       role: 'Co-fondateur & CEO',
@@ -19,5 +35,5 @@ export class FoundersComponent {
       text: "J'ai grandi avec l'idée de créer et partager… Alors, pourquoi pas vous ? Une passion est une source infinie de motivation, alors voici la nôtre.",
       photo: 'assets/Maewan_Marthelot.jpg'
     }
-  ];
+  ]);
 }
